@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AQI-Data</title>
+    <link rel="icon" type="image/x-icon" href="wind.png">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title text-center">
+        <h1>AQI - Details</h1>
+      </div>
+      <div class="input-group mb-3 w-50 mx-auto">
+        <input
+          type="text"
+          class="form-control input"
+          id="input"
+          placeholder="Enter a city name"
+          aria-label="Recipient's username"
+          aria-describedby="button-addon2"
+        />
+        <button
+          class="btn btn-outline-primary"
+          type="button"
+          id="button-addon2"
+        >
+          Submit
+        </button>
+      </div>
+      <div class="cityName text-center">
+        <p class="para" id="para"><span class="aqiCity" id="aqiCity"></span><span class="aqi mx-auto" id="aqi"></span><span class="aqiLevel"></span></p>
+        <!-- <h4 class="aqiCity" id="aqiCity"></h4>
+        <h3 class="aqi mx-auto" id="aqi"></h3> -->
+      </div>
+      <div class="iaqiValues mx-auto text-center">
+        <div class="iaqiRow">
+          <p class="iaqi dew">dew</p>
+          <p class="values" id="dewVal"></p>
+        </div>
+        <div class="iaqiRow">
+          <p class="iaqi h">h</p>
+          <p class="values" id="hVal"></p>
+        </div>
+        <div class="iaqiRow">
+          <p class="iaqi p">p</p>
+          <p class="values" id="pVal"></p>
+        </div>
+        <div class="iaqiRow">
+          <p class="iaqi pm25">pm25</p>
+          <p class="values" id="pm25Val"></p>
+        </div>
+        <div class="iaqiRow">
+          <p class="iaqi t">t</p>
+          <p class="values" id="tVal"></p>
+        </div>
+        <div class="iaqiRow">
+          <p class="iaqi w">w</p>
+          <p class="values" id="wVal"></p>
+        </div>
+      </div>
+<div class="text-center reset">
+      <button
+          class="btn btn-dark"
+          type="button"
+          id="button"
+        >
+          Reset
+        </button>
+      </div>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>

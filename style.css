@@ -1,0 +1,104 @@
+body {
+  background-image: url("earth-4k.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  padding: 4%;
+}
+
+.container {
+  /* border: 1px solid whitesmoke; */
+  width: 60% !important;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.title {
+  color: aqua;
+  margin: 1rem;
+  border: 1px solid whitesmoke;
+}
+
+.cityName {
+  /* border: 1px solid whitesmoke; */
+  color: white;
+  margin: 0;
+  margin-top: -10px;
+  /* display: grid;
+  justify-content: center; */
+  display: none;
+}
+
+.aqiCity{
+  text-transform: uppercase;
+  color: white;
+  font-size: medium;
+  /* width: 100%; */
+  display: block;
+  /* padding: 5px; */
+}
+
+.aqi{
+  /* border: 1px solid; */
+  /* width: fit-content;
+  height: fit-content; */
+  font-size: xx-large;
+  font-weight: bolder;
+  display: block;
+  /* padding: 5px; */
+  color: white;
+  /* background-image: linear-gradient(#0aa1a7,#00d4ff); */
+}
+
+.aqiLevel{
+  display: block;
+  font-size: medium;
+}
+.iaqiHeading {
+  font-size: large;
+  font-weight: bold;
+  color: rgb(47, 255, 75);
+}
+
+.iaqiValues {
+  /* border: 1px solid whitesmoke; */
+  width: 80%;
+  padding: 2px;
+}
+.iaqiRow {
+  display: flex;
+}
+
+.iaqi {
+  width: 50%;
+  border: 1px solid whitesmoke;
+  color: black;
+  font-weight: bold;
+  margin: 0;
+}
+
+.values {
+  width: 50%;
+  border: 1px solid whitesmoke;
+  color: white;
+  margin: 0;
+}
+
+.para{
+  width: fit-content;
+  height: fit-content;
+  border: 1px solid red;
+  padding: 10px;
+  margin: 1rem;
+  border-radius: 5px;
+}
+
+.reset{
+  margin-top: 5px;
+}
